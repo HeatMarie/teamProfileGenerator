@@ -32,7 +32,7 @@ async function managerCard(){
     `
     }
 }
-
+// ------ TODO have github open new tab to git hub
 async function engineerCard(){
     for(let i = 0; i < engineerArray.length; i++){
     html += `<!-- Engineer Card-->

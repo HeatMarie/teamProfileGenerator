@@ -12,7 +12,7 @@ describe('Employee Class', () => {
         })
     });
     describe("employee.name", () => {
-        it("Should return a string of the Employee name", () => {
+        it("Should return the Employee name", () => {
             // Act
             const employee = new Employee('Heather', 'B250', 'h.m.bjoin@gmail.com');
             //Assert
