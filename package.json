@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/HeatMarie/teamProfileGenerator#readme",
   "dependencies": {
+    "bootstrap": "^5.0.1",
     "inquirer": "^8.1.1",
     "jest": "^27.0.4"
   }
