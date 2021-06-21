@@ -36,7 +36,7 @@ describe('Employee Class', () => {
         });
     });
     describe("getname", () => {
-        it("Should return a string of the Employee email", () => {
+        it("Should return the Employee email", () => {
             // Act
             const employee = new Employee('Heather', 'B250', 'h.m.bjoin@gmail.com');
             //Assert
@@ -44,7 +44,7 @@ describe('Employee Class', () => {
         });
     });
     describe("getId", () => {
-        it("Should return a string of the Employee email", () => {
+        it("Should return the Employee email", () => {
             // Act
             const employee = new Employee('Heather', 'B250', 'h.m.bjoin@gmail.com');
             //Assert
