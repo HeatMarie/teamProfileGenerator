@@ -19,12 +19,13 @@ async function managerCard(){
     <div class="col">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">${managerArray[i].name}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Manager</h6>
-                <p class="card-text">${managerArray[i].id}</p>
-                <p class="card-text">${managerArray[i].officeNumber}</p>
-                <a href="mailto:${managerArray[i].email}" class="card-link">Email</a>
-                <a href="#" class="card-link">Another link</a>
+                <div class="cardHead">
+                    <h5 class="card-title">${managerArray[i].name}</h5>
+                    <h6 class="card-subtitle mb-2"><span class="icon"><i class="fas fa-mug-hot"></i></span>Manager</h6>
+                </div>
+                <p class="card-text">ID: ${managerArray[i].id}</p>
+                <p class="card-text">Office Number: ${managerArray[i].officeNumber}</p>
+                <p class="card-text"><span class="icon">Email:</span><a href="mailto:${managerArray[i].email}" class="card-link"> ${managerArray[i].email}</a></p>
             </div>
         </div>
     </div>
@@ -39,12 +40,13 @@ async function engineerCard(){
     <div class="col">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">${engineerArray[i].name}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
-                <p class="card-text">${engineerArray[i].id}</p>
-                <p class="card-text">${engineerArray[i].github}</p>
-                <a href="mailto:${engineerArray[i].email}" class="card-link">Email</a>
-                <a href="#" class="card-link">Another link</a>
+                <div class="cardHead">
+                    <h5 class="card-title">${engineerArray[i].name}</h5>
+                    <h6 class="card-subtitle mb-2"><span class="icon"><i class="fas fa-glasses"></i></span>Engineer</h6>
+                </div>
+                <p class="card-text">ID: ${engineerArray[i].id}</p>
+                <p class="card-text"><span class="icon">Email:</span><a href="mailto:${engineerArray[i].email}" class="card-link">${engineerArray[i].email}</a></p>
+                <p class="card-text"><span class="icon">Github:</span><a href="https://github.com/${engineerArray[i].github}" target="_blank" class="card-link">${engineerArray[i].github}</a></p>
             </div>
         </div>
     </div>
@@ -55,15 +57,16 @@ async function engineerCard(){
 
 async function employeeCard(){
     for(let i = 0; i < employeeArray.length; i++){
-    html += `<!-- Engineer Card-->
+    html += `<!-- Employee Card-->
     <div class="col">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">${employeeArray[i].name}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Employee</h6>
-                <p class="card-text">${employeeArray[i].id}</p>
-                <a href="mailto:${employeeArray[i].email}" class="card-link">Email</a>
-                <a href="#" class="card-link">Another link</a>
+                <div class="cardHead">
+                    <h5 class="card-title">${employeeArray[i].name}</h5>
+                    <h6 class="card-subtitle mb-2"><span class="icon"><i class="fas fa-star"></i></span>Employee</h6>
+                </div>
+                <p class="card-text">ID: ${employeeArray[i].id}</p>
+                <p class="card-text"><span class="icon">Email:</span><a href="mailto:${employeeArray[i].email}" class="card-link">${employeeArray[i].email}</a></p>
             </div>
         </div>
     </div>
@@ -78,12 +81,13 @@ async function internCard(){
     <div class="col">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">${internArray[i].name}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Employee</h6>
-                <p class="card-text">${internArray[i].id}</p>
-                <p class="card-text">${internArray[i].school}</p>
-                <a href="mailto:${internArray[i].email}" class="card-link">Email</a>
-                <a href="#" class="card-link">Another link</a>
+                <div class="cardHead">
+                    <h5 class="card-title">${internArray[i].name}</h5>
+                    <h6 class="card-subtitle mb-2"><span class="icon"><i class="fas fa-graduation-cap"></i></span>Intern</h6>
+                </div>
+                <p class="card-text">ID: ${internArray[i].id}</p>
+                <p class="card-text">School: ${internArray[i].school}</p>
+                <p class="card-text"><span class="icon">Email:</span><a href="mailto:${internArray[i].email}" class="card-link">${internArray[i].email}</a>
             </div>
         </div>
     </div>

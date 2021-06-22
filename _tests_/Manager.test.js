@@ -10,7 +10,7 @@ describe('Manager Class', () => {
         });
     });
     describe("manager.name", () => {
-        it("should return the manager's name", () => {
+        it("should assign the manager's name", () => {
             //Act
             const manager = new Manager('Kelly', 'D22', 'kelly@gmail.com', 'B24');
             // Assert
@@ -18,7 +18,7 @@ describe('Manager Class', () => {
         });
     });
     describe('manager.id', () => {
-        it('Should return the manager id', () => {
+        it('Should assign the manager id', () => {
             // Act
             const manager = new Manager('Kelly', 'D22', 'kelly@gmail.com', 'B24');
             // Assert
@@ -26,7 +26,7 @@ describe('Manager Class', () => {
         });
     });
     describe('manager.email', () => {
-        it('Should return the manager email', () => {
+        it('Should assign the manager email', () => {
             // Act
             const manager = new Manager('Kelly', 'D22', 'kelly@gmail.com', 'B24');
             // Assert
@@ -63,6 +63,14 @@ describe('Manager Class', () => {
             const manager = new Manager('Kelly', 'D22', 'kelly@gmail.com', 'B24');
             // Assert
             expect(manager.getEmail()).toEqual('kelly@gmail.com');
+        });
+    });
+    describe('getOfficeNumber', () => {
+        it('Should get and return the managers office number', () => {
+            // Act
+            const manager = new Manager('Kelly', 'D22', 'kelly@gmail.com', 'B24');
+            // Assert
+            expect(manager.getOfficeNumber()).toEqual('B24');
         });
     });
     describe('getRole', () => {

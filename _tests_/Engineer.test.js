@@ -10,7 +10,7 @@ describe('Engineer Class', () => {
         });
     });
     describe('engineer.name', () => {
-        it("Should return the engineer's name", () => {
+        it("Should assign the engineer's name", () => {
             // Act
             const engineer = new Engineer('Alex', 'C75', 'alexC@gmail.com', 'AlexC');
             // Assert
@@ -18,7 +18,7 @@ describe('Engineer Class', () => {
         });
     });
     describe('engineer.id', () => {
-        it("Should return the engineer's name", () => {
+        it("Should assign the engineer's name", () => {
             // Act
             const engineer = new Engineer('Alex', 'C75', 'alexC@gmail.com', 'AlexC');
             // Assert
@@ -26,7 +26,7 @@ describe('Engineer Class', () => {
         });
     });
     describe('engineer.email', () => {
-        it("Should return the engineer's email", () => {
+        it("Should assign the engineer's email", () => {
             // Act
             const engineer = new Engineer('Alex', 'C75', 'alexC@gmail.com', 'AlexC');
             // Assert
@@ -34,7 +34,7 @@ describe('Engineer Class', () => {
         });
     });
     describe('engineer.github', () => {
-        it("Should return the engineer's email", () => {
+        it("Should assign the engineer's github", () => {
             // Act
             const engineer = new Engineer('Alex', 'C75', 'alexC@gmail.com', 'AlexC');
             // Assert
@@ -42,7 +42,7 @@ describe('Engineer Class', () => {
         });
     });
     describe('getName', () => {
-        it("Should return the engineer's email", () => {
+        it("Should return the engineer's name", () => {
             // Act
             const engineer = new Engineer('Alex', 'C75', 'alexC@gmail.com', 'AlexC');
             // Assert
