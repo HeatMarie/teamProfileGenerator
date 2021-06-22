@@ -6,7 +6,7 @@ describe('Engineer Class', () => {
             // Act
             const engineer = new Engineer('Alex', 'C75', 'alexC@gmail.com', 'AlexC');
             // Assert
-            expect(new Engineer()).toBeInstanceOf(Engineer);
+            expect(engineer).toBeInstanceOf(Engineer);
         });
     });
     describe('engineer.name', () => {

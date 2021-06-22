@@ -6,7 +6,7 @@ describe('Manager Class', () => {
             //Act
             const manager = new Manager('Kelly', 'D22', 'kelly@gmail.com', 'B24');
             //Assert
-            expect(new Manager()).toBeInstanceOf(Manager);
+            expect(manager).toBeInstanceOf(Manager);
         });
     });
     describe("manager.name", () => {
