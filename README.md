@@ -41,8 +41,8 @@ The test of all tests ;).
 
 ## The Results
 
-<img src="./img/Capture.JPG">
-<img src="./img/Capture2.JPG">
+<img src="./images/teamProfileGenerator.gif">
+
 
 
 ## Link to the Website 
