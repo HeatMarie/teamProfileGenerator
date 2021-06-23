@@ -95,10 +95,56 @@ async function internCard(){
     `
     }
 }
+function managerRole(){
+    inquirer.prompt([
+        {
+            type: 'confirm',
+            name: 'role',
+            message: 'Did you want to add a new Manger and team?'
+        },
+        {
+            type: 'input',
+            name: 'name',
+            message: `What is the manager's name?`
+        },
+        {
+            type: 'input',
+            name: 'id',
+            message: `What is the manager's id?`,
+        },
+        {
+            type: `input`,
+            name: `email`,
+            message: `What is the manager's email?`,
+        },
+        {
+            type: 'input',
+            name: 'officeNumber',
+            message: `What is the manager's office number?`,
+        },
+        
 
+    ]).then((response) => {
+        if (response.role === true) {
+            employee = new Manager(response.name, response.id, response.email, response.officeNumber)
+            managerArray.push(employee)
+            console.log('managerArray', managerArray)
+            managerCard()
+            console.log(new Manager(response.name, response.id, response.email, response.officeNumber))
+        }
+    })
+    .then((response) => {
+        return role();
+    }) 
+}
 
 function role() {
     inquirer.prompt([
+        {
+            type: 'list',
+            name: 'role',
+            choices: ['Employee', 'Engineer', 'Manager', 'Intern'],
+        },
         {
             type: 'input',
             name: 'name',
@@ -113,11 +159,6 @@ function role() {
             type: `input`,
             name: `email`,
             message: `What is the employee's email?`,
-        },
-        {
-            type: 'list',
-            name: 'role',
-            choices: ['Employee', 'Engineer', 'Manager', 'Intern'],
         },
         {
             type: 'input',
@@ -195,5 +236,5 @@ function role() {
 
 
 
-role()
+managerRole()
 
