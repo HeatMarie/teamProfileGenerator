@@ -23,7 +23,7 @@ The test of all tests ;).
 
 #### Task
 
-- Build a Node.js command-line application that takes in information about employees on a softwaare engineering team, then generates an HTML webpage that displays summaries for each person. 
+- Build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. 
 
 - Testing is key to making code maintainable, so you'll also write a unit test for every part of your code and ensures that it passes each test. 
 
