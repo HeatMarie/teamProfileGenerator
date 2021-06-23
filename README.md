@@ -41,7 +41,7 @@ The test of all tests ;).
 
 ## The Results
 
-<img src="./images/teamProfileGenerator.gif">
+![Gif Demo](images/teamProfileGeneratorGif.gif)
 
 
 
