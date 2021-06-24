@@ -73,4 +73,12 @@ describe('Engineer Class', () => {
             expect(engineer.getGithub()).toEqual('AlexC');
         });
     });
+    describe('getRole', () =>{
+        it('Should return the Engineer role', () => {
+            // Act
+            const engineer = new Engineer('Alex', 'C75', 'alexC@gmail.com', 'AlexC');
+            // Assert
+            expect(engineer.getRole()).toEqual('Engineer');
+        });
+    });
 });
